@@ -2,7 +2,7 @@ package edu.craptocraft.barcos;
 
 public interface Barco {
 
-    public void alarma();
-    public void mensajeSocorro(String mensaje);
+    public String alarma();
+    public String mensajeSocorro(String mensaje);
 
 }

@@ -3,6 +3,7 @@
 - Todos los barcos tienen un comportamiento en común: los métodos alarma() y
 mensajeSocorro(), ¿qué implicaciones tiene esa afirmación a hora de construir
 barco? Explícalo con tus propias palabras.
+
 - Del **barco crucero** se quiere guardar los metros de eslora y un contador del
 número de camas ocupadas. El contador se utilizará para almacenar el número de
 camas que se vayan creado.

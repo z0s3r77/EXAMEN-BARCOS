@@ -3,8 +3,7 @@ package edu.craptocraft.barcos;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertInstanceOf;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class BarcocruceroTest {
 
@@ -15,10 +14,26 @@ public class BarcocruceroTest {
         crucero = new BarcoCrucero(50, 20);
     }
 
-    @Test
-    public void constructorTest(){
+    @Test public void constructorTest(){
         assertNotNull(crucero);
-        assertInstanceOf(Barco, crucero);
+        assertInstanceOf(Barco.class, crucero);
+        assertEquals("\nBarco de crucero con 20 camas y 50 metros de eslora", crucero.toString());
+    }
+
+    @Test public  void getCamasVaciasTest(){
+        assertEquals(20, crucero.getCamasVacias());
+    }
+
+    @Test public void getEsloraMetrosTest(){
+        assertEquals(50, crucero.getEsloraMetros());
+    }
+
+    @Test public void alarmaTest(){
+        assertEquals("Esto es un mensaje de alarma de BarcoCrucero", crucero.alarma());
+    }
+
+    @Test public void mensajeSocorroTest(){
+        assertEquals("Esto es un mensaje de Socorro: ayuda mundo", crucero.mensajeSocorro("ayuda mundo"));
     }
 
 }
