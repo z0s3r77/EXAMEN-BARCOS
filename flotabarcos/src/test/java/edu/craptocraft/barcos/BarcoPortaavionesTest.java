@@ -6,11 +6,11 @@ import static  org.junit.jupiter.api.Assertions.*;
 
 public class BarcoPortaavionesTest {
 
-    static BarcoPortaaviones portaaviones;
+    static BarcoPortaAviones portaaviones;
 
     @BeforeClass public static void inicializador(){
         //Se crea un porta aviones de 15 aviones y 30 marines
-        portaaviones = new BarcoPortaaviones(15, 30);
+        portaaviones = new BarcoPortaAviones(15, 30);
     }
 
     @Test public void constructorTest(){
