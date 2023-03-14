@@ -1,4 +1,16 @@
-# Enuncioado del examen
+# LA FLOTA DE MAXIMO BARCOS-EXAMEN
+**Indice:**
+- **Introducción**
+- **Enunciado del examen**
+- **Metodología**
+
+## Introducción
+
+En este examen se pretende que el alumno desarrolle un programa que permita crear una flota de barcos, 
+cada uno con sus distintas intereacciones... esto se explica mejor en el enunciado del examen.
+
+
+## Enunciado del examen
 
 - Todos los barcos tienen un comportamiento en común: los métodos alarma() y
 mensajeSocorro(), ¿qué implicaciones tiene esa afirmación a hora de construir
@@ -30,3 +42,12 @@ Haz un diagrama, como el visto en clase de la estructura de clases resultante y
 completa los métodos correspondientes y crea un programa principal que utilice
 los diferentes tipos de barcos y ejecuta los mensajes de socorro y alarma de
 cada uno.
+
+## Metodología
+
+
+Para poder ir resolviendo el examen, debiamos seguir la metodología TDD, __Test Development Driven__ , que se resume en :
+
+- Escribir casos test para una clase.
+- Resolver esos casos test construyendo la clase.
+- Refactorizar código.
